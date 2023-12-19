@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+textarea {
+  padding: 20px 10px;
+  height: 20px;
+}
+
+body {
+  @apply font-cairo; /* Apply the Cairo font */
+}
+
+body::-webkit-scrollbar {
+  @apply w-3 bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-purple-300 dark:bg-purple-800 rounded-full; /* Apply the background color for thumb in dark mode */
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-transparent; /* Apply the background color for track in dark mode */
+}
+
+.scroll::-webkit-scrollbar {
+  @apply h-2 bg-transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  @apply bg-purple-300 dark:bg-purple-800 rounded-full; /* Apply the background color for thumb in dark mode */
+}
+
+.scroll::-webkit-scrollbar-track {
+  @apply bg-transparent; /* Apply the background color for track in dark mode */
+}
